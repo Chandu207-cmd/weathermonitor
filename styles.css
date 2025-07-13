@@ -1,0 +1,215 @@
+/* Basic Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    text-align: center;
+    background: url('https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?cs=srgb&dl=pexels-pixabay-209831.jpg&fm=jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    color: white;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.navbar ul li {
+    padding: 14px 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #ff7f50;
+}
+
+.image-taskbar {
+    position: relative;
+}
+
+.image-taskbar img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.marquee {
+    background-color: #f0f8ff;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Present Weather Box Styling */
+.present-weather {
+    padding: 20px;
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px orange;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Header Input and Button Styling */
+.header input[type="text"],
+.header select {
+    padding: 8px;
+    font-size: 1rem;
+    margin: 8px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.header button {
+    padding: 8px;
+    font-size: 1rem;
+    margin: 8px;
+    border-radius: 5px;
+    width: 150px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: darkorange;
+}
+
+/* Weather Information Styling */
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.temperature {
+    font-size: 2.5rem;
+    color: grey;
+    padding: 10px;
+    border: 2px solid #ff7f50;
+    border-radius: 10px;
+    width: 240px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.weather-info .city-name,
+.weather-info .feels-like,
+.weather-info .description,
+.weather-info .time-updated, /* <-- Added this line */
+.weather-info .details p {
+    background-color: rgb(181, 175, 175);
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    width: 180px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.details p {
+    display: block;
+    margin: 5px 0;
+}
+
+#noReportMessage {
+    font-size: 1.2rem;
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Forecast Taskbar and Box Styling */
+.forecast-taskbar {
+    background-color: #daf0f4;
+    color: rgb(249, 246, 246);
+    padding: 10px 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.forecast-navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.forecast-navbar ul li {
+    color: rgb(26, 17, 17);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.forecast-box-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.forecast-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px;
+    width: 150px;         /* set a fixed width */
+    height: 300px; 
+    text-align: center;
+}
+
+.date {
+    background-color: orange;
+    color: white !important;
+    padding: 6px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+
+/* Report Info Styling */
+.report-info {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid red;
+}

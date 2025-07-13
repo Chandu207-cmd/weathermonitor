@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Monitoring</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a
+              href="https://home.openweathermap.org/users/sign_in"
+              id="homeBtn"
+              target="_blank"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://home.openweathermap.org/users/sign_in"
+              id="contactBtn"
+              target="_blank"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://weather.com/en-IN/india/news/news/2024-10-26-weekend-weather-october-26-27-heavy-rains-to-lash-bihar-jharkhand-odisha"
+              id="newsBtn"
+              target="_blank"
+              >News</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://openweathermap.org/guide"
+              id="guideBtn"
+              target="_blank"
+              >Guide</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://home.openweathermap.org/home"
+              id="profileBtn"
+              target="_blank"
+              >Profile</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=39.3343&lon=-28.6523&zoom=5"
+              id="mapBtn"
+              target="_blank"
+              >Maps</a
+            >
+          </li>
+          <li><a href="#" id="reportBtn">Report</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="image-taskbar">
+      <img
+        src="https://img.freepik.com/premium-photo/white-snow-blurred-autumn-forest-with-green-orange-tree-leaves-beauty-natu-generative-ai_874904-43808.jpg"
+        alt="Nature Taskbar Image"
+      />
+      <div class="overlay-text">Weather Monitoring</div>
+    </div>
+
+    <div class="marquee">
+      <marquee behavior="scroll" direction="left">
+        Welcome to the Weather Monitoring App! Stay updated with the latest
+        weather forecasts!
+      </marquee>
+    </div>
+
+    <div class="present-weather">
+      <div class="header">
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <button id="getWeatherBtn">Get Weather</button>
+        
+        <select id="unitSelect">
+          <option value="metric">Celsius</option>
+          <option value="imperial">Fahrenheit</option>
+        </select>
+      </div>
+
+      <div class="weather-info">
+        <div class="city-name" id="cityName">City Name</div>
+        <div class="temperature" id="temperature">Temperature</div>
+        <div class="feels-like" id="feelsLike">Feels Like</div>
+        <div class="description" id="description">Weather Description</div>
+        <div class="time-updated" id="timeUpdated">Last Updated</div>
+        <div class="details">
+          <p>
+            <span class="label">Wind Speed:</span> <span id="windSpeed"></span>
+          </p>
+          <p>
+            <span class="label">Humidity:</span> <span id="humidity"></span>
+          </p>
+          <p>
+            <span class="label">Pressure:</span> <span id="pressure"></span>
+          </p>
+        </div>
+        <div id="noReportMessage" style="display: none">
+          No weather report details available for the given date
+        </div>
+      </div>
+    </div>
+
+    <div class="forecast-taskbar">
+      <nav class="forecast-navbar">
+        <ul>
+          <li class="forecast-heading">7-Day Forecast</li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="forecast-box-container" id="forecastList"></div>
+
+    <div class="report-info" id="reportInfo" style="display: none">
+      <h2>Report an Issue</h2>
+      <p>
+        If you're experiencing issues with the weather data, please report it by
+        providing details about the problem. Our team will get back to you soon.
+      </p>
+      <p>Email: chanduinternship@gmail.com</p>
+      <p>Mobile: 8008348678</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
